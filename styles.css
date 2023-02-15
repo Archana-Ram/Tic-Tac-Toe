@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: RGB(12 113 118);
+}
+
+.container {
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(255, 189, 103);
+  font-size: 5vh;
+  text-transform: lowercase;
+  display: flex;
+  background-color: RGB(12 113 118);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container p {
+  margin: 0;
+}
+
+#gameBoard {
+  display: flex;
+  width: 162px;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  padding: 2vh;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  border: solid 2px rgb(255, 189, 103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+}
+.box:nth-child(3n) {
+  border-right: none;
+}
+.box:nth-child(7) {
+  border-bottom: none;
+}
+.box:nth-child(8) {
+  border-bottom: none;
+}
+.box:nth-child(9) {
+  border-bottom: none;
+}
+
+#restartButn {
+  height: 4vh;
+  width: 10vh;
+  border-radius: 11px;
+  border: none;
+  margin-top: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+}
+#restartButn:hover {
+  background-color: rgb(255, 189, 103);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .container #gameBoard {
+    display: flex;
+    width: 211px;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    padding: 2vh;
+  }
+  .container #gameBoard .box {
+    height: 80px;
+    width: 68px;
+    border: solid 2px rgb(255, 189, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+    border-left: none;
+  }
+  .container #gameBoard .box:nth-child(3n) {
+    border-right: none;
+  }
+  .container #gameBoard .box:nth-child(7) {
+    border-bottom: none;
+  }
+  .container #gameBoard .box:nth-child(8) {
+    border-bottom: none;
+  }
+  .container #gameBoard .box:nth-child(9) {
+    border-bottom: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
